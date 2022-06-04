@@ -42,12 +42,6 @@ pub(crate) enum Ready {
     In(Duration),
 }
 
-impl Ready {
-    pub fn now(&self) -> bool {
-        matches!(self, Ready::Now)
-    }
-}
-
 #[derive(Debug)]
 pub(crate) struct Task {
     task_id: u64,
@@ -104,8 +98,7 @@ impl Task {
         self.task.dropped.load(Ordering::Relaxed)
     }
 
-    pub fn ready(&self) -> Ready {
-        let now = Instant::now();
+    pub fn ready(&self, now: Instant) -> Ready {
         if now > self.next_execution {
             Ready::Now
         } else {

@@ -9,6 +9,7 @@ license = "ISC"
 [dependencies]
 parking_lot = "0.12"
 log = "0.4"
+smallvec = "1"
 
 [dev-dependencies]
 env_logger = "0.9"
