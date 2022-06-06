@@ -1,0 +1,15 @@
+[package]
+name = "synchronous-timer"
+description = "Simpler synchronous timer/scheduler for Rust applications"
+authors = ["EasyPost OSS <oss@easypost.com>"]
+version = "0.1.0"
+edition = "2021"
+license = "ISC"
+
+[dependencies]
+parking_lot = "0.12"
+log = "0.4"
+smallvec = "1"
+
+[dev-dependencies]
+env_logger = "0.9"
