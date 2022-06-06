@@ -1,6 +1,10 @@
 [package]
 name = "synchronous-timer"
 description = "Simpler synchronous timer/scheduler for Rust applications"
+homepage = "https://github.com/EasyPost/synchronous-timer-rs/"
+repository = "https://github.com/EasyPost/synchronous-timer-rs/"
+documentation = "https://docs.rs/synchronous-timer/"
+readme = "README.md"
 authors = ["EasyPost OSS <oss@easypost.com>"]
 version = "0.1.0"
 edition = "2021"
